@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dates</title>
+</head>
+<body>
+    <h1>Examples for date</h1>
+    <script>
+        let date = new Date();    //it's an constructor on date
+        console.log(date);
+        console.log(new Date(10000000))    //jan 1st 1970
+        date = new Date(2024,0)
+        console.log(date);
+        date = new Date("1947/08/15")
+        console.log(date);
+        let in_date = new Date(date);
+        console.log(in_date);
+        console.log(in_date.getFullYear());
+        console.log(in_date.getMonth());
+        console.log(in_date.getDate());
+        console.log(date.toLocaleDateString());     //it reutrn the date without time
+        console.log(date.toISOString());
+        let date1=new Date();
+        console.log(date1.toLocaleString());     //it print the date and local time
+        </script>
+</body>
+</html>
+
+
+//try other methods in documentation

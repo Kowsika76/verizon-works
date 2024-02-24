@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h3>string examples</h3>
+    <script>
+        let names="Kowsi";
+        console.log("Hello");
+        document.write("Hello kowsi!");
+        console.log(names.length);
+        console.log(names.toUpperCase());
+        console.log(names.toLowerCase());
+        name="    vickykakasesensai   ";
+        console.log(name)
+        console.log(name.trim());          //remove the spaces at first and last not the spaces in middle
+        console.log(name.trimEnd()); 
+        console.log(name.trimStart());
+        console.log(name.substring(3,6));   //select the letters/words based on the index, it won't include the last index
+        console.log(name.charAt(9).toUpperCase());   //to fetch particular characters
+        console.log(name.replace("i","*"));          //replace used to replace first occurence of that given char string
+        console.log(name.replaceAll("i","*"));          //replaceall used to replace all occurence of that given char in string   //the changes are made temporarly in replace,replaceall
+        console.log(name.replaceAll(" ","_"));
+        console.log(name.length);
+        let newstr=names.padStart(25,"0");
+        console.log(newstr);
+        let newstrs=names.padEnd(25,"0");
+        console.log(newstrs);
+        //match and slice
+    </script>
+</body>
+</html>
+
+//var - function scope, values can be reassigned
+//let-block-scope,values cannot be reassigned
