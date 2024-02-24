@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Demo on SVG</h1>
+    <!-- all the width of the shapes will be less than the svg width and height -->
+    <svg height="600" width="600" style="border:1px solid black">
+        <!-- cx and cy is the coordinates where we can place the circle in the desired location, stroke-color of the cicrle border, stroke-width-width of the circle border -->
+        <circle cx="120" cy="120" r="90" stroke="black" stroke-width="3px"  fill="pink"></circle>
+        <!--  -->
+        <line x1="0" y1="0" x2="300" y2="300" stroke="red" stroke-width="2px"></line>
+        <!--  rx, ry give the rounded border-->
+        <rect rx="10" ry="10" height="100" width="300" stroke="blue" stroke-width="8px" fill="goldenrod"></rect>
+        <ellipse cx="200" cy="150" rx="200" ry="100" stroke="yellow" stroke-width="7px" ></ellipse>
+        <ellipse cx="250" cy="200" rx="200" ry="100" stroke="yellow" stroke-width="7px"></ellipse>
+        <ellipse cx="300" cy="250" rx="200" ry="100" stroke="yellow" stroke-width="7px" ></ellipse>
+        <!-- overlapped ellipse -->
+    </svg>
+</body>
+</html>

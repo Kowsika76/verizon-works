@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Demo</h1>
+    <button class="btn btn-primary" type="submit" id="button">submit</button>
+    <script>
+        var btnRef=document.getElementById("button");
+        btnRef.addEventListener("click",()=>{
+            if(navigator.geolocation){
+                // getCurrentPosition function have two aeguments pos and error
+                navigator.geolocation.getCurrentPosition(pos=>{
+                    let longitude=pos.coords.longitude;
+                    let latitude=pos.coords.latitude;
+                    console.log("Longitude: " + longitude)
+                    console.log("Latitude: " + latitude)
+                },error=>{
+                    // predefined error codes (permission denied, position unavailable,timeout)are there
+                    console.log("user denied");
+                })
+            }
+            else{
+                console.log("geolocation not supported");
+            }
+           
+        })
+    </script>
+</body>
+</html>
